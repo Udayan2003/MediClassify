@@ -1,6 +1,6 @@
 # MediClassify
 
-![Conventional Commits](https://img.shields.io/badge/Release%20Version-0.0.1-blue.svg)
+![Conventional Commits](https://img.shields.io/badge/Release%20Version-0.2.0-blue.svg)
 
 An application to classify skin ailments and, compress and store them without losing essential information
 
