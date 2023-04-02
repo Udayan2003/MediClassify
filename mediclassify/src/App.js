@@ -1,12 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from './components/Layout';
+import Home from './pages/Home';
+import NoPage from './pages/NoPage'
+import Login from './pages/Login'
+import Features from './pages/Features'
+import About from './pages/About'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <div><b>Website under Construction 🚧</b></div>
-      </header>
+      <Router>
+        <Layout/>
+        <Routes>
+          <Route path = "/" element={<Home/>} />
+          <Route path = "/login" element={<Login/>} />
+          <Route path = "/about" element={<About/>} />
+          <Route path = "/features" element={<Features/>} />
+          <Route path = "/*" element={<NoPage/>}/>
+        </Routes>
+      </Router>
+      {/* <Home/> */}
     </div>
   );
 }
