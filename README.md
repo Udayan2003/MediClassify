@@ -1,5 +1,7 @@
 # MediClassify
 
+![Conventional Commits](https://img.shields.io/badge/Release%20Version-0.0.1-blue.svg)
+
 An application to classify skin ailments and, compress and store them without losing essential information
 
 ### Getting-started 
