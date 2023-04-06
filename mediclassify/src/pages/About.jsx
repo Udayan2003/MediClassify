@@ -1,8 +1,13 @@
-import React from "react";
+import React from 'react';
+import '../stylesheets/About.css';
 
-function About() {
-    return (
-        <div className='Body'><b>About page under Construction 🚧</b></div>
-    )
-}
+const About = () => {
+  return (
+    <div className="about">
+      <h1>About MediClassify</h1>
+      <p>MediClassify is a platform for managing medical images.</p>
+    </div>
+  );
+};
+
 export default About;
