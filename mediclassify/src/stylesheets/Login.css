@@ -1,0 +1,9 @@
+.form-parent{
+    height: 100vh;
+    /* background: linear-gradient(#141e30, #243b55); */
+    background-color: #F3F1F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

@@ -1,22 +1,16 @@
-import React from "react";
-import TypewriterComponent from "typewriter-effect";
+import React from 'react';
+import { Button } from 'react-bootstrap';
+import {Link} from 'react-router-dom';
+import '../stylesheets/Home.css';
 
-const styles = {
-    'font-size':'2.5em',
-    color: 'white',
-    'text-align':'center',
+const Home = () => {
+  return (
+    <div className="home">
+      <h1>Welcome to MediClassify</h1>
+      <p>A platform for managing medical images</p>
+      <Link to="/login"><Button variant="primary">Get Started</Button></Link>
+    </div>
+  );
 };
 
-function Home() {
-    return (
-        <div className='Body' style={styles}>
-            <TypewriterComponent onInit={(typewriter) => { 
-                typewriter.typeString('Welcome to our medical image classification Website 👋')
-                .changeDelay(30)
-                .start()
-                }
-            }/>
-        </div>
-    )
-}
 export default Home;

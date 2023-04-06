@@ -1,0 +1,30 @@
+.auth-form-container-register{
+    background-color: dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:3em;
+    text-align: left;
+}
+
+.register-label{
+    font-size: 1.38em;
+    text-align: left;
+    padding: 0.68em;
+    padding-left:0;
+}
+
+input{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 0.3em;
+    width: 15em;
+    height: 2.2em;
+    padding: 0.5em;
+}
+
+.form-holder{
+    text-align: left;
+}
+

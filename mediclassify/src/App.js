@@ -1,30 +1,26 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Layout from './components/Layout';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import About from './pages/About';
+import Features from './pages/Features';
+import { Login } from './pages/Login';
+import NoPage from './pages/NoPage';
 import Home from './pages/Home';
-import NoPage from './pages/NoPage'
-import Login from './pages/Login'
-import Features from './pages/Features'
-import About from './pages/About'
-import Register from './pages/Register';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Layout/>
+    <Router>
+      <Navbar/>
         <Routes>
-          <Route path = "/" element={<Home/>}/>
-          <Route path = "/login" element={<Login/>}/>
-          <Route path = "/about" element={<About/>}/>
-          <Route path = "/features" element={<Features/>}/>
-          <Route path="/register" element={<Register/>}/>
-          <Route path = "/*" element={<NoPage/>}/>
+        <Route path="/" element={<Home/>}/>
+          <Route path="/features" element={<Features/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/*" element={<NoPage/>} />
         </Routes>
-      </Router>
-      {/* <Home/> */}
-    </div>
+    </Router>
   );
 }
 
